@@ -16,8 +16,11 @@
 		17017E7716C90F65008C774E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 17017E7616C90F65008C774E /* Default.png */; };
 		17017E7916C90F65008C774E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17017E7816C90F65008C774E /* Default@2x.png */; };
 		17017E7B16C90F65008C774E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17017E7A16C90F65008C774E /* Default-568h@2x.png */; };
-		17017E7E16C90F65008C774E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17017E7D16C90F65008C774E /* ViewController.m */; };
-		17017E8116C90F65008C774E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17017E7F16C90F65008C774E /* ViewController.xib */; };
+		17017E8916C90F9D008C774E /* AnimationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17017E8816C90F9D008C774E /* AnimationsTableViewController.m */; };
+		17017EB316C9433C008C774E /* registrationIphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17017EAC16C9433C008C774E /* registrationIphone5@2x.png */; };
+		17017EB416C9433C008C774E /* SplitAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 17017EAE16C9433C008C774E /* SplitAnimation.m */; };
+		17115DD216CA36D400CF5399 /* maskTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD016CA36D400CF5399 /* maskTop@2x.png */; };
+		17115DD316CA36D400CF5399 /* maskDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD116CA36D400CF5399 /* maskDown@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +37,13 @@
 		17017E7616C90F65008C774E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		17017E7816C90F65008C774E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17017E7A16C90F65008C774E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		17017E7C16C90F65008C774E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		17017E7D16C90F65008C774E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		17017E8016C90F65008C774E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		17017E8716C90F9D008C774E /* AnimationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationsTableViewController.h; sourceTree = "<group>"; };
+		17017E8816C90F9D008C774E /* AnimationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsTableViewController.m; sourceTree = "<group>"; };
+		17017EAC16C9433C008C774E /* registrationIphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registrationIphone5@2x.png"; sourceTree = "<group>"; };
+		17017EAD16C9433C008C774E /* SplitAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitAnimation.h; sourceTree = "<group>"; };
+		17017EAE16C9433C008C774E /* SplitAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitAnimation.m; sourceTree = "<group>"; };
+		17115DD016CA36D400CF5399 /* maskTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maskTop@2x.png"; sourceTree = "<group>"; };
+		17115DD116CA36D400CF5399 /* maskDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maskDown@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +90,12 @@
 		17017E6A16C90F65008C774E /* AnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				17017EA716C9433C008C774E /* SplitAnimation */,
 				17017E7316C90F65008C774E /* AppDelegate.h */,
 				17017E7416C90F65008C774E /* AppDelegate.m */,
-				17017E7C16C90F65008C774E /* ViewController.h */,
-				17017E7D16C90F65008C774E /* ViewController.m */,
-				17017E7F16C90F65008C774E /* ViewController.xib */,
 				17017E6B16C90F65008C774E /* Supporting Files */,
+				17017E8716C90F9D008C774E /* AnimationsTableViewController.h */,
+				17017E8816C90F9D008C774E /* AnimationsTableViewController.m */,
 			);
 			path = AnimationsDemo;
 			sourceTree = "<group>";
@@ -105,6 +112,18 @@
 				17017E7A16C90F65008C774E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		17017EA716C9433C008C774E /* SplitAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				17115DD016CA36D400CF5399 /* maskTop@2x.png */,
+				17115DD116CA36D400CF5399 /* maskDown@2x.png */,
+				17017EAC16C9433C008C774E /* registrationIphone5@2x.png */,
+				17017EAD16C9433C008C774E /* SplitAnimation.h */,
+				17017EAE16C9433C008C774E /* SplitAnimation.m */,
+			);
+			path = SplitAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +181,9 @@
 				17017E7716C90F65008C774E /* Default.png in Resources */,
 				17017E7916C90F65008C774E /* Default@2x.png in Resources */,
 				17017E7B16C90F65008C774E /* Default-568h@2x.png in Resources */,
-				17017E8116C90F65008C774E /* ViewController.xib in Resources */,
+				17017EB316C9433C008C774E /* registrationIphone5@2x.png in Resources */,
+				17115DD216CA36D400CF5399 /* maskTop@2x.png in Resources */,
+				17115DD316CA36D400CF5399 /* maskDown@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +196,8 @@
 			files = (
 				17017E7116C90F65008C774E /* main.m in Sources */,
 				17017E7516C90F65008C774E /* AppDelegate.m in Sources */,
-				17017E7E16C90F65008C774E /* ViewController.m in Sources */,
+				17017E8916C90F9D008C774E /* AnimationsTableViewController.m in Sources */,
+				17017EB416C9433C008C774E /* SplitAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,14 +210,6 @@
 				17017E6E16C90F65008C774E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		17017E7F16C90F65008C774E /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17017E8016C90F65008C774E /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +306,7 @@
 				17017E8616C90F65008C774E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

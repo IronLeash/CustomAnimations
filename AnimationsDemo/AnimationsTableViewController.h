@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AnimationsTableViewController.h
 //  AnimationsDemo
 //
 //  Created by Ilker Baltaci on 2/11/13.
@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SplitAnimation.h"
 
-@interface ViewController : UIViewController
+
+
+@interface AnimationsTableViewController : UITableViewController <SplitAnimationDelegate>
 
 @end

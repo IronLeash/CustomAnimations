@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ViewController.h"
+#import "AnimationsTableViewController.h"
 
 @implementation AppDelegate
 
@@ -16,8 +16,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+
+    AnimationsTableViewController *animationsTableViewController = [[AnimationsTableViewController alloc] init];
+    
+    self.window.rootViewController = animationsTableViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
