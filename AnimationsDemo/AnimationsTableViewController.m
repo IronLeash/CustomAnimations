@@ -7,6 +7,8 @@
 //
 
 #import "AnimationsTableViewController.h"
+#import "UIViewOverlayAnimation.h"
+
 @interface AnimationsTableViewController ()
 
 @end
@@ -25,7 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    self.navigationItem.title = @"Custom Animations";
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -49,7 +52,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 1;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,6 +70,11 @@
         case 0:
         {
         titleString = @"Split dissmiss animation";
+            break;
+        }
+        case 1:
+        {
+            titleString = @"UIview Overlay animation";
             break;
         }
         
@@ -90,7 +98,14 @@
         aSplitAnimation.delegate = self;
         [self presentViewController:aSplitAnimation animated:YES completion:nil];
 
+    }else if (indexPath.row==1){
+    
+        UIViewOverlayAnimation *overlayAnimation = [[UIViewOverlayAnimation alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+        [overlayAnimation showInView:self.view];
+    
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark Animation Delegates

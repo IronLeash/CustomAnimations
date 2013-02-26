@@ -19,6 +19,12 @@
 		17017E8916C90F9D008C774E /* AnimationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17017E8816C90F9D008C774E /* AnimationsTableViewController.m */; };
 		17017EB316C9433C008C774E /* registrationIphone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17017EAC16C9433C008C774E /* registrationIphone5@2x.png */; };
 		17017EB416C9433C008C774E /* SplitAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 17017EAE16C9433C008C774E /* SplitAnimation.m */; };
+		1708436E16DCC504007583A2 /* UIViewOverlayAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1708436D16DCC504007583A2 /* UIViewOverlayAnimation.m */; };
+		1708437116DCC8A4007583A2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1708436F16DCC892007583A2 /* QuartzCore.framework */; };
+		1708437416DCC931007583A2 /* registrationOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1708437216DCC930007583A2 /* registrationOverlay.png */; };
+		1708437516DCC931007583A2 /* registrationOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1708437316DCC930007583A2 /* registrationOverlay@2x.png */; };
+		1708437816DCC940007583A2 /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1708437616DCC940007583A2 /* closeButton.png */; };
+		1708437916DCC940007583A2 /* closeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1708437716DCC940007583A2 /* closeButton@2x.png */; };
 		17115DD216CA36D400CF5399 /* maskTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD016CA36D400CF5399 /* maskTop@2x.png */; };
 		17115DD316CA36D400CF5399 /* maskDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD116CA36D400CF5399 /* maskDown@2x.png */; };
 /* End PBXBuildFile section */
@@ -42,6 +48,13 @@
 		17017EAC16C9433C008C774E /* registrationIphone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registrationIphone5@2x.png"; sourceTree = "<group>"; };
 		17017EAD16C9433C008C774E /* SplitAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitAnimation.h; sourceTree = "<group>"; };
 		17017EAE16C9433C008C774E /* SplitAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitAnimation.m; sourceTree = "<group>"; };
+		1708436B16DCC4E7007583A2 /* UIViewOverlayAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewOverlayAnimation.h; sourceTree = "<group>"; };
+		1708436D16DCC504007583A2 /* UIViewOverlayAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewOverlayAnimation.m; sourceTree = "<group>"; };
+		1708436F16DCC892007583A2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1708437216DCC930007583A2 /* registrationOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = registrationOverlay.png; sourceTree = "<group>"; };
+		1708437316DCC930007583A2 /* registrationOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registrationOverlay@2x.png"; sourceTree = "<group>"; };
+		1708437616DCC940007583A2 /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
+		1708437716DCC940007583A2 /* closeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeButton@2x.png"; sourceTree = "<group>"; };
 		17115DD016CA36D400CF5399 /* maskTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maskTop@2x.png"; sourceTree = "<group>"; };
 		17115DD116CA36D400CF5399 /* maskDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maskDown@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1708437116DCC8A4007583A2 /* QuartzCore.framework in Frameworks */,
 				17017E6516C90F65008C774E /* UIKit.framework in Frameworks */,
 				17017E6716C90F65008C774E /* Foundation.framework in Frameworks */,
 				17017E6916C90F65008C774E /* CoreGraphics.framework in Frameworks */,
@@ -80,6 +94,7 @@
 		17017E6316C90F65008C774E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1708436F16DCC892007583A2 /* QuartzCore.framework */,
 				17017E6416C90F65008C774E /* UIKit.framework */,
 				17017E6616C90F65008C774E /* Foundation.framework */,
 				17017E6816C90F65008C774E /* CoreGraphics.framework */,
@@ -90,6 +105,7 @@
 		17017E6A16C90F65008C774E /* AnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1708436916DCC4BB007583A2 /* UIViewOverlayAnimation */,
 				17017EA716C9433C008C774E /* SplitAnimation */,
 				17017E7316C90F65008C774E /* AppDelegate.h */,
 				17017E7416C90F65008C774E /* AppDelegate.m */,
@@ -124,6 +140,19 @@
 				17017EAE16C9433C008C774E /* SplitAnimation.m */,
 			);
 			path = SplitAnimation;
+			sourceTree = "<group>";
+		};
+		1708436916DCC4BB007583A2 /* UIViewOverlayAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1708437616DCC940007583A2 /* closeButton.png */,
+				1708437716DCC940007583A2 /* closeButton@2x.png */,
+				1708437216DCC930007583A2 /* registrationOverlay.png */,
+				1708437316DCC930007583A2 /* registrationOverlay@2x.png */,
+				1708436B16DCC4E7007583A2 /* UIViewOverlayAnimation.h */,
+				1708436D16DCC504007583A2 /* UIViewOverlayAnimation.m */,
+			);
+			path = UIViewOverlayAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +213,10 @@
 				17017EB316C9433C008C774E /* registrationIphone5@2x.png in Resources */,
 				17115DD216CA36D400CF5399 /* maskTop@2x.png in Resources */,
 				17115DD316CA36D400CF5399 /* maskDown@2x.png in Resources */,
+				1708437416DCC931007583A2 /* registrationOverlay.png in Resources */,
+				1708437516DCC931007583A2 /* registrationOverlay@2x.png in Resources */,
+				1708437816DCC940007583A2 /* closeButton.png in Resources */,
+				1708437916DCC940007583A2 /* closeButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +231,7 @@
 				17017E7516C90F65008C774E /* AppDelegate.m in Sources */,
 				17017E8916C90F9D008C774E /* AnimationsTableViewController.m in Sources */,
 				17017EB416C9433C008C774E /* SplitAnimation.m in Sources */,
+				1708436E16DCC504007583A2 /* UIViewOverlayAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,8 +18,9 @@
     // Override point for customization after application launch.
 
     AnimationsTableViewController *animationsTableViewController = [[AnimationsTableViewController alloc] init];
-    
-    self.window.rootViewController = animationsTableViewController;
+    UINavigationController *mainNAvigationController = [[UINavigationController alloc] initWithRootViewController:animationsTableViewController];
+
+    self.window.rootViewController = mainNAvigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
