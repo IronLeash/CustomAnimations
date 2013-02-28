@@ -8,6 +8,7 @@
 
 #import "AnimationsTableViewController.h"
 #import "UIViewOverlayAnimation.h"
+#import "JumpingButton.h"
 
 @interface AnimationsTableViewController ()
 
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Custom Animations";
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -52,7 +53,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 2;
+    return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -75,6 +76,11 @@
         case 1:
         {
             titleString = @"UIview Overlay animation";
+            break;
+        }
+        case 2:
+        {
+            titleString = @"Jumping Button";
             break;
         }
         
@@ -102,6 +108,15 @@
     
         UIViewOverlayAnimation *overlayAnimation = [[UIViewOverlayAnimation alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         [overlayAnimation showInView:self.view];
+    
+    }else{
+    
+        JumpingButton *jumpingButton = [[JumpingButton alloc] init];
+//        jumpingButton.navigationItem.backBarButtonItem.title = @"Back";
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+        self.navigationItem.backBarButtonItem = backButton;
+
+        [self.navigationController pushViewController:jumpingButton animated:YES];
     
     }
     
