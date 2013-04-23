@@ -9,7 +9,7 @@
 #import "AnimationsTableViewController.h"
 #import "UIViewOverlayAnimation.h"
 #import "JumpingButton.h"
-
+#import "LVRotatingButtonViewController.h"
 @interface AnimationsTableViewController ()
 
 @end
@@ -53,7 +53,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -83,6 +83,11 @@
             titleString = @"Jumping Button";
             break;
         }
+        case 3:
+        {
+            titleString = @"Rotating Button";
+            break;
+        }
         
             
         default:
@@ -109,14 +114,22 @@
         UIViewOverlayAnimation *overlayAnimation = [[UIViewOverlayAnimation alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
         [overlayAnimation showInView:self.view];
     
-    }else{
+    }else if (indexPath.row==2){
     
         JumpingButton *jumpingButton = [[JumpingButton alloc] init];
-//        jumpingButton.navigationItem.backBarButtonItem.title = @"Back";
         UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
         self.navigationItem.backBarButtonItem = backButton;
 
         [self.navigationController pushViewController:jumpingButton animated:YES];
+    
+    }else{
+    
+        LVRotatingButtonViewController *rotatingButton = [[LVRotatingButtonViewController alloc] init];
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+        self.navigationItem.backBarButtonItem = backButton;
+        
+        [self.navigationController pushViewController:rotatingButton animated:YES];
+        
     
     }
     

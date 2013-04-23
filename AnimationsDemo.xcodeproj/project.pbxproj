@@ -25,6 +25,9 @@
 		1708437516DCC931007583A2 /* registrationOverlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1708437316DCC930007583A2 /* registrationOverlay@2x.png */; };
 		1708437816DCC940007583A2 /* closeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1708437616DCC940007583A2 /* closeButton.png */; };
 		1708437916DCC940007583A2 /* closeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1708437716DCC940007583A2 /* closeButton@2x.png */; };
+		1709BE35172675EF008947C8 /* LVRotatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1709BE33172675EF008947C8 /* LVRotatingButton.m */; };
+		1709BE36172675EF008947C8 /* plusButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1709BE34172675EF008947C8 /* plusButton@2x.png */; };
+		1709BE391726760F008947C8 /* LVRotatingButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1709BE381726760F008947C8 /* LVRotatingButtonViewController.m */; };
 		17115DD216CA36D400CF5399 /* maskTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD016CA36D400CF5399 /* maskTop@2x.png */; };
 		17115DD316CA36D400CF5399 /* maskDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD116CA36D400CF5399 /* maskDown@2x.png */; };
 		1746162316DF83F200F64E9F /* JumpingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746162216DF83F200F64E9F /* JumpingButton.m */; };
@@ -56,6 +59,11 @@
 		1708437316DCC930007583A2 /* registrationOverlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "registrationOverlay@2x.png"; sourceTree = "<group>"; };
 		1708437616DCC940007583A2 /* closeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closeButton.png; sourceTree = "<group>"; };
 		1708437716DCC940007583A2 /* closeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeButton@2x.png"; sourceTree = "<group>"; };
+		1709BE32172675EF008947C8 /* LVRotatingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRotatingButton.h; sourceTree = "<group>"; };
+		1709BE33172675EF008947C8 /* LVRotatingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRotatingButton.m; sourceTree = "<group>"; };
+		1709BE34172675EF008947C8 /* plusButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plusButton@2x.png"; sourceTree = "<group>"; };
+		1709BE371726760F008947C8 /* LVRotatingButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVRotatingButtonViewController.h; sourceTree = "<group>"; };
+		1709BE381726760F008947C8 /* LVRotatingButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVRotatingButtonViewController.m; sourceTree = "<group>"; };
 		17115DD016CA36D400CF5399 /* maskTop@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maskTop@2x.png"; sourceTree = "<group>"; };
 		17115DD116CA36D400CF5399 /* maskDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maskDown@2x.png"; sourceTree = "<group>"; };
 		1746162116DF83F200F64E9F /* JumpingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpingButton.h; sourceTree = "<group>"; };
@@ -108,6 +116,7 @@
 		17017E6A16C90F65008C774E /* AnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1709BE3117267174008947C8 /* RotatingButton */,
 				1746162016DF83DA00F64E9F /* JumpingButton */,
 				1708436916DCC4BB007583A2 /* UIViewOverlayAnimation */,
 				17017EA716C9433C008C774E /* SplitAnimation */,
@@ -157,6 +166,18 @@
 				1708436D16DCC504007583A2 /* UIViewOverlayAnimation.m */,
 			);
 			path = UIViewOverlayAnimation;
+			sourceTree = "<group>";
+		};
+		1709BE3117267174008947C8 /* RotatingButton */ = {
+			isa = PBXGroup;
+			children = (
+				1709BE32172675EF008947C8 /* LVRotatingButton.h */,
+				1709BE33172675EF008947C8 /* LVRotatingButton.m */,
+				1709BE34172675EF008947C8 /* plusButton@2x.png */,
+				1709BE371726760F008947C8 /* LVRotatingButtonViewController.h */,
+				1709BE381726760F008947C8 /* LVRotatingButtonViewController.m */,
+			);
+			path = RotatingButton;
 			sourceTree = "<group>";
 		};
 		1746162016DF83DA00F64E9F /* JumpingButton */ = {
@@ -230,6 +251,7 @@
 				1708437516DCC931007583A2 /* registrationOverlay@2x.png in Resources */,
 				1708437816DCC940007583A2 /* closeButton.png in Resources */,
 				1708437916DCC940007583A2 /* closeButton@2x.png in Resources */,
+				1709BE36172675EF008947C8 /* plusButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +268,8 @@
 				17017EB416C9433C008C774E /* SplitAnimation.m in Sources */,
 				1708436E16DCC504007583A2 /* UIViewOverlayAnimation.m in Sources */,
 				1746162316DF83F200F64E9F /* JumpingButton.m in Sources */,
+				1709BE35172675EF008947C8 /* LVRotatingButton.m in Sources */,
+				1709BE391726760F008947C8 /* LVRotatingButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
