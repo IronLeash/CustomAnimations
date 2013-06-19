@@ -10,6 +10,8 @@
 #import "UIViewOverlayAnimation.h"
 #import "JumpingButton.h"
 #import "LVRotatingButtonViewController.h"
+#import "LVPlayButtonController.h"
+
 @interface AnimationsTableViewController ()
 
 @end
@@ -53,7 +55,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 
-    return 4;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -88,7 +90,12 @@
             titleString = @"Rotating Button";
             break;
         }
-        
+        case 4:
+        {
+            titleString = @"Play Button";
+            break;
+        }
+            
             
         default:
             break;
@@ -122,7 +129,7 @@
 
         [self.navigationController pushViewController:jumpingButton animated:YES];
     
-    }else{
+    }else if (indexPath.row==3){
     
         LVRotatingButtonViewController *rotatingButton = [[LVRotatingButtonViewController alloc] init];
         UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
@@ -130,7 +137,15 @@
         
         [self.navigationController pushViewController:rotatingButton animated:YES];
         
+    }else{
+
+        LVPlayButtonController *playButtonController = [[LVPlayButtonController alloc] init];
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:nil action:nil];
+        self.navigationItem.backBarButtonItem = backButton;
+        
+        [self.navigationController pushViewController:playButtonController animated:YES];
     
+
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

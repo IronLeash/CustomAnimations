@@ -31,6 +31,12 @@
 		17115DD216CA36D400CF5399 /* maskTop@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD016CA36D400CF5399 /* maskTop@2x.png */; };
 		17115DD316CA36D400CF5399 /* maskDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17115DD116CA36D400CF5399 /* maskDown@2x.png */; };
 		1746162316DF83F200F64E9F /* JumpingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1746162216DF83F200F64E9F /* JumpingButton.m */; };
+		1752AE9B176EF3D600181714 /* pauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1752AE99176EF3D600181714 /* pauseButton.png */; };
+		1752AE9C176EF3D600181714 /* pauseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1752AE9A176EF3D600181714 /* pauseButton@2x.png */; };
+		17F6FD8C176A09000060AAAF /* LVPlayButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F6FD8B176A09000060AAAF /* LVPlayButtonController.m */; };
+		17F6FD92176A0C130060AAAF /* RoundProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F6FD91176A0C130060AAAF /* RoundProgressBar.m */; };
+		17F6FD94176A0ED20060AAAF /* playButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F6FD93176A0ED20060AAAF /* playButton@2x.png */; };
+		17F6FD96176A14BE0060AAAF /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F6FD95176A14BE0060AAAF /* playButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,14 @@
 		17115DD116CA36D400CF5399 /* maskDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "maskDown@2x.png"; sourceTree = "<group>"; };
 		1746162116DF83F200F64E9F /* JumpingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumpingButton.h; sourceTree = "<group>"; };
 		1746162216DF83F200F64E9F /* JumpingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JumpingButton.m; sourceTree = "<group>"; };
+		1752AE99176EF3D600181714 /* pauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauseButton.png; path = AnimationsDemo/PlayButton/pauseButton.png; sourceTree = SOURCE_ROOT; };
+		1752AE9A176EF3D600181714 /* pauseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pauseButton@2x.png"; path = "AnimationsDemo/PlayButton/pauseButton@2x.png"; sourceTree = SOURCE_ROOT; };
+		17F6FD8A176A09000060AAAF /* LVPlayButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LVPlayButtonController.h; sourceTree = "<group>"; };
+		17F6FD8B176A09000060AAAF /* LVPlayButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LVPlayButtonController.m; sourceTree = "<group>"; };
+		17F6FD90176A0C130060AAAF /* RoundProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RoundProgressBar.h; path = AnimationsDemo/PlayButton/RoundProgressBar.h; sourceTree = SOURCE_ROOT; };
+		17F6FD91176A0C130060AAAF /* RoundProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RoundProgressBar.m; path = AnimationsDemo/PlayButton/RoundProgressBar.m; sourceTree = SOURCE_ROOT; };
+		17F6FD93176A0ED20060AAAF /* playButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "playButton@2x.png"; path = "AnimationsDemo/PlayButton/playButton@2x.png"; sourceTree = SOURCE_ROOT; };
+		17F6FD95176A14BE0060AAAF /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playButton.png; path = AnimationsDemo/PlayButton/playButton.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +130,7 @@
 		17017E6A16C90F65008C774E /* AnimationsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				17F6FD89176A08D70060AAAF /* PlayButton */,
 				1709BE3117267174008947C8 /* RotatingButton */,
 				1746162016DF83DA00F64E9F /* JumpingButton */,
 				1708436916DCC4BB007583A2 /* UIViewOverlayAnimation */,
@@ -189,6 +204,29 @@
 			path = JumpingButton;
 			sourceTree = "<group>";
 		};
+		17F6FD89176A08D70060AAAF /* PlayButton */ = {
+			isa = PBXGroup;
+			children = (
+				17F6FD8D176A09E30060AAAF /* LVPLayButton */,
+				17F6FD8A176A09000060AAAF /* LVPlayButtonController.h */,
+				17F6FD8B176A09000060AAAF /* LVPlayButtonController.m */,
+			);
+			path = PlayButton;
+			sourceTree = "<group>";
+		};
+		17F6FD8D176A09E30060AAAF /* LVPLayButton */ = {
+			isa = PBXGroup;
+			children = (
+				1752AE99176EF3D600181714 /* pauseButton.png */,
+				1752AE9A176EF3D600181714 /* pauseButton@2x.png */,
+				17F6FD95176A14BE0060AAAF /* playButton.png */,
+				17F6FD93176A0ED20060AAAF /* playButton@2x.png */,
+				17F6FD90176A0C130060AAAF /* RoundProgressBar.h */,
+				17F6FD91176A0C130060AAAF /* RoundProgressBar.m */,
+			);
+			path = LVPLayButton;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +290,10 @@
 				1708437816DCC940007583A2 /* closeButton.png in Resources */,
 				1708437916DCC940007583A2 /* closeButton@2x.png in Resources */,
 				1709BE36172675EF008947C8 /* plusButton@2x.png in Resources */,
+				17F6FD94176A0ED20060AAAF /* playButton@2x.png in Resources */,
+				17F6FD96176A14BE0060AAAF /* playButton.png in Resources */,
+				1752AE9B176EF3D600181714 /* pauseButton.png in Resources */,
+				1752AE9C176EF3D600181714 /* pauseButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +312,8 @@
 				1746162316DF83F200F64E9F /* JumpingButton.m in Sources */,
 				1709BE35172675EF008947C8 /* LVRotatingButton.m in Sources */,
 				1709BE391726760F008947C8 /* LVRotatingButtonViewController.m in Sources */,
+				17F6FD8C176A09000060AAAF /* LVPlayButtonController.m in Sources */,
+				17F6FD92176A0C130060AAAF /* RoundProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
